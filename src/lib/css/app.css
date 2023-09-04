@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "mono-bold";
+    src: url("/fonts/MonoBold-z8jG0.ttf");
+}
+@font-face {
+    font-family: "mono-regular";
+    src: url("/fonts/MonoRegular-jEmAR.ttf");
+}
+@font-face {
+    font-family: "montserrat";
+    src: url("/fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "mintsoda";
+    src: url("/fonts/MintsodaLimeGreen16X16Regular-qZgp2.ttf");
+}
+
+
+* {
+    box-sizing: border-box;
+    transition: .17s;
+}
+
+@layer base {
+    * {
+      @apply text-white-pink font-family-montserrat;
+    }
+
+    h1 {
+        @apply text-5xl md:text-7xl;
+    }
+
+    h2 {
+        @apply text-2xl md:text-4xl;
+    }
+
+    h3 {
+        @apply text-xl md:text-3xl;
+    }
+}
+
+body,
+html {
+    background-color: black;
+}
+
+.font-family-monobold {
+    font-family: "mono-bold";
+}
+
+.font-family-mono {
+    font-family: "mono-regular";
+}
+
+.font-family-montserrat {
+    font-family: "montserrat";
+}
+
+.font-family-mintsoda {
+    font-family: "mintsoda";
+}
+
+.divider {
+    height: .1rem;
+    width:  100%;
+}

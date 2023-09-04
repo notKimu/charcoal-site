@@ -1,0 +1,3 @@
+﻿font: mono
+license: Freeware
+link: https://www.fontspace.com/mono-font-f57596

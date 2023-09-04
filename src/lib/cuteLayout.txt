@@ -1,0 +1,41 @@
+<script lang="ts">
+    import "$lib/css/app.css";
+</script>
+
+<header class="w-screen h-16 top-0 left-0 flex flex-row items-center justify-between gap-3 border-b border-breeze-pink p-3 z-50">
+    <a class="logo h-full" href="/">
+        <img class="h-full" src="/svg/logo.svg" alt="download" />
+    </a>
+
+    <div class="h-full flex gap-4">
+        <a class="h-full hover:p-1  hover:bg-breeze-pink rounded-md" href="/downloads">
+            <img class="h-full" src="/svg/download.svg" alt="download" />
+        </a>
+        <a class="h-full hover:p-1  hover:bg-breeze-pink rounded-md" href="/docs">
+            <img class="h-full" src="/svg/docs.svg" alt="documentation" />
+        </a>
+        <a class="h-full hover:p-1  hover:bg-breeze-pink rounded-md" href="https://github.com/notKimu/charcoal-site">
+            <img class="h-full" src="/svg/repo.svg" alt="github repository" />
+        </a>
+        <a class="h-full hover:p-1  hover:bg-breeze-pink rounded-md" href="/donate">
+            <img class="h-full" src="/svg/donate.svg" alt="donate ko-fi" />
+        </a>
+    </div>
+</header>
+
+<slot />
+
+<style>
+    .logo:hover {
+        animation: rainbow-so-gay 2s ease infinite;
+    }
+
+    @keyframes rainbow-so-gay {
+        0% {
+            filter: hue-rotate(0deg);
+        }
+        100% {
+            filter: hue-rotate(360deg);
+        }
+    }
+</style>
